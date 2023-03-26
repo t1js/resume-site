@@ -1,0 +1,63 @@
+header, footer{
+    display: flex;
+    flex-direction: column;
+    background-color: antiquewhite;
+    padding: 30px;
+    align-items: center;
+    width: 100%;
+}
+
+header ul{
+    display: flex;
+    margin-bottom: 20px;
+}
+
+header ul li{
+    margin: 0 8px;
+}
+
+header ul li:hover, :focus{
+    color: gray;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+ul, nav{
+    list-style: none;
+}
+
+body{
+    font: normal 18px;
+    color:#222;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+}
+
+a{
+    text-decoration: none;
+    color:inherit;
+    cursor: pointer;
+    opacity: 0.9;
+}
+
+a:hover{
+    opacity: 1;
+}
+
+img{
+    border-radius: 50%;
+}
+
+section{
+    padding: 100px 100px;
+}
+
+#details, #skills{
+    display: flex;
+    flex-direction: column;
+    align-items: top;
+}
