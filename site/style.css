@@ -2,21 +2,22 @@ header, footer{
     display: flex;
     flex-direction: column;
     background-color: antiquewhite;
-    padding: 30px;
+    padding: 2%;
     align-items: center;
     width: 100%;
 }
 
-header ul{
+header nav ul{
     display: flex;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
+    position: sticky;
 }
 
-header ul li{
+header nav ul li{
     margin: 0 8px;
 }
 
-header ul li:hover, :focus{
+header nav ul li:hover, :focus{
     color: gray;
 }
 
@@ -50,14 +51,21 @@ a:hover{
 
 img{
     border-radius: 50%;
+    width: 30%;
 }
 
 section{
-    padding: 100px 100px;
+    padding: 5%;
 }
 
-#details, #skills{
+#details, #skills, #about-me{
     display: flex;
-    flex-direction: column;
-    align-items: top;
+}
+
+#my-photo, #my-info{
+    flex: 40%
+}
+
+#soft, #hard{
+    flex: 50%
 }
