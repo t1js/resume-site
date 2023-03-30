@@ -69,3 +69,17 @@ section{
 #soft, #hard{
     flex: 50%
 }
+
+#paletteOne, #paletteTwo{
+    height: 3em;
+    width: auto;
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+}
+
+#paletteOne img, #paletteTwo img{
+    height: 100%;
+    width: auto;
+    object-fit: cover;
+}
