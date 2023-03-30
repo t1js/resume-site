@@ -1,0 +1,1 @@
+const setTheme = palette => document.documentElement.className = palette;

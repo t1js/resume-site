@@ -1,7 +1,16 @@
-header, footer{
+:root,
+    :root.cool {
+    --bg-color: #4f7fa7;
+    --text-color:  #194560;
+    }
+    :root.warm {
+    --bg-color: #f2efe0;
+    --text-color: #34332e;
+    }
+    
+    header, footer{
     display: flex;
     flex-direction: column;
-    background-color: antiquewhite;
     padding: 2%;
     align-items: center;
     width: 100%;
@@ -36,6 +45,8 @@ body{
     color:#222;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     text-align: center;
+    background-color: var(--bg-color);
+    color: var(--text-color);
 }
 
 a{
