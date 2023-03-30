@@ -70,16 +70,9 @@ section{
     flex: 50%
 }
 
-#paletteOne, #paletteTwo{
-    height: 3em;
-    width: auto;
-    cursor: pointer;
-    border: none;
-    background-color: transparent;
-}
-
-#paletteOne img{
-    height: 100%;
+.palette{
+    height: 1.5em;
     width: auto;
     object-fit: cover;
+    border-radius: 0%;
 }
