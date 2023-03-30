@@ -78,7 +78,7 @@ section{
     background-color: transparent;
 }
 
-#paletteOne img, #paletteTwo img{
+#paletteOne img{
     height: 100%;
     width: auto;
     object-fit: cover;
