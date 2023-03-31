@@ -20,28 +20,23 @@
             </nav>
         </header>
 
-    <section id="contact-form">
-    <div>
-        <h3>Reach out to me:</h3>
-        <form required method="post" action="mailto:bakulevskaya.nb@gmail.com" enctype="application/x-www-form-urlencoded" target="_blank">
-        <label>
-            Who are you?<input type="text" placeholder="Anastasiia Bakulevska">
-        </label><br>
-        <label>
-            Your email?<input type="email" placeholder="a.bakulevska@gmail.com">
-        </label><br>
-        <label>Why are you contacting me?<input type="text" placeholder="What's up?"/>
-        </label><br>
-        <input type="submit">
-    </form>
-</div>
-</section>
+        <div class="contact-me">
+            
+            <form required method="post" action="mailto:bakulevskaya.nb@gmail.com" enctype="application/x-www-form-urlencoded">
 
-<footer>
-    <div class="palettes">
-        <img class="palette cool" title="Cool palette" src="../site/img/cool_palette.jpg" alt="Cool palette button" onclick="setTheme('cool')"/><br>
-        <img class="palette warm" title="Warm palette" src="../site/img/warm_palette.jpg" alt="Warm palette button" onclick="setTheme('warm')"/>
-        </div>
-</footer>
+              <input placeholder="Name" required="" type="text" />
+              <input name="email" placeholder="Email" type="email" />
+              <input placeholder="What&#39;s up?" type="text" />
+              <button type="submit">SEND MESSAGE</button>
+            </form>
+          </div>
+
+
+ <footer>
+            <div class="palettes">
+                <img class="palette cool" title="Cool palette" src="../site/img/cool.png" alt="Cool palette button" onclick="setTheme('cool')"/>
+                <img class="palette warm" title="Warm palette" src="../site/img/warm.png" alt="Warm palette button" onclick="setTheme('warm')"/>
+                </div>
+        </footer>
 </body>
 </html><script type="text/javascript" src="js/site.js"></script>
