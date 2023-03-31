@@ -1,12 +1,42 @@
 :root,
     :root.cool {
-    --bg-color: #4f7fa7;
+    background-image: linear-gradient(to right, #a1c4fd 0%, #194560 100%);
     --text-color:  #194560;
     }
     :root.warm {
-    --bg-color: #f2efe0;
+    background-image: linear-gradient(to right, #f83600 0%, #f9d423 100%);
     --text-color: #34332e;
     }
+
+    /* .spinner {
+        width: 40px;
+        height: 40px;
+        margin: 100px auto;
+        background-color: #333;
+      
+        border-radius: 100%;  
+        -webkit-animation: sk-scaleout 1.0s infinite ease-in-out;
+        animation: sk-scaleout 1.0s infinite ease-in-out;
+      }
+      
+      @-webkit-keyframes sk-scaleout {
+        0% { -webkit-transform: scale(0) }
+        100% {
+          -webkit-transform: scale(1.0);
+          opacity: 0;
+        }
+      }
+      
+      @keyframes sk-scaleout {
+        0% { 
+          -webkit-transform: scale(0);
+          transform: scale(0);
+        } 100% {
+          -webkit-transform: scale(1.0);
+          transform: scale(1.0);
+          opacity: 0;
+        }
+      } */
     
     header, footer{
     display: flex;
@@ -45,7 +75,7 @@ body{
     color:#222;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     text-align: center;
-    background-color: var(--bg-color);
+    background-color: var(background-image);
     color: var(--text-color);
 }
 
@@ -87,3 +117,4 @@ section{
     object-fit: cover;
     border-radius: 0%;
 }
+
