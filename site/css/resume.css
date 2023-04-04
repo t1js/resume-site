@@ -1,4 +1,18 @@
-#soft,
-#hard {
-    flex: 50%
+.navigation {
+    display: flex;
+    margin-left: 90%;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.skills {
+    display: flex;
+
+}
+
+.soft-skills, .hard-skills {
+    flex: 50%;
 }
