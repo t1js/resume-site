@@ -16,3 +16,14 @@
 .soft-skills, .hard-skills {
     flex: 50%;
 }
+
+.tag {
+    background: #dedede;
+    border-color: #282828;
+    margin: 0 0 0 0;
+    padding: 0 7px;
+    box-sizing: border-box;
+    border: 1px solid;
+    border-radius: 2px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
