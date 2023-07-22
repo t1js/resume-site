@@ -46,54 +46,67 @@ html {
 
   a {
     text-decoration: none;
-    color:inherit;
+    color: inherit;
     cursor: pointer;
     opacity: 0.9;
   }
+  
   a:hover {
     opacity: 1;
   }
-
+  
   /* Header and Navigation */
+  #header {
+    display: flex;
+    justify-content: center;
+  }
+  
+  #header nav {
+    display: flex;
+    border: 60px solid transparent;
+  }
 
-#header nav ul {
-  display: -moz-flex;
-  display: -webkit-flex;
-  display: -ms-flex;
-  display: flex;
-  margin-bottom: 0;
-  list-style: none;
-  padding-left: 0;
-  border: solid 1px #ffffff;
-  border-radius: 4px;
-}
-#header nav ul li {
+  #header nav ul {
+    display: flex;
+    margin-bottom: 0;
+    list-style: none;
+    padding-left: 0;
+    border: solid 1px #ffffff;
+    border-radius: 4px;
+  }
+  
+  #header nav ul li {
     padding-left: 0;
     border-left: solid 1px #ffffff;
   }
-#header nav ul li:first-child {
-      border-left: 0;
-    }
-#header nav ul li a {
-      display: block;
-      min-width: 7.5rem;
-      height: 2.75rem;
-      line-height: 2.75rem;
-      padding: 0 1.25rem 0 1.45rem;
-      text-transform: uppercase;
-      letter-spacing: 0.2rem;
-      font-size: 0.8rem;
-      border-bottom: 0;
-    }
-#header nav ul li a:hover {
-        background-color: rgba(255, 255, 255, 0.075);
-      }
-#header nav ul li a:active {
-        background-color: rgba(255, 255, 255, 0.175);
-      }
-ul, nav {
+  
+  #header nav ul li:first-child {
+    border-left: 0;
+  }
+  
+  #header nav ul li a {
+    display: block;
+    min-width: 7.5rem;
+    height: 2.75rem;
+    line-height: 2.75rem;
+    padding: 0 1.25rem 0 1.45rem;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    font-size: 0.8rem;
+    border-bottom: 0;
+  }
+  
+  #header nav ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.075);
+  }
+  
+  #header nav ul li a:active {
+    background-color: rgba(255, 255, 255, 0.175);
+  }
+  
+  ul, nav {
     list-style: none;
-}
+  }
 
 /* body {
     font: normal 18px;
@@ -204,57 +217,57 @@ p {
 
 /* Page-specific styles */
 /* resume page */
-
 .navigation {
-    display: flex;
-    margin-left: 90%;
+  display: flex;
+  margin-left: 90%;
 }
+
 .main-container {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
+
 .skills {
-    display: flex;
+  display: flex;
 }
 
 .soft-skills, .hard-skills {
-    flex: 50%;
+  flex: 50%;
 }
 
 .tag {
-    background: #dedede;
-    border-color: #282828;
-    margin: 0 0 0 0;
-    padding: 0 7px;
-    box-sizing: border-box;
-    border: 1px solid;
-    border-radius: 2px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #dedede;
+  border-color: #282828;
+  margin: 0;
+  padding: 0 7px;
+  box-sizing: border-box;
+  border: 1px solid;
+  border-radius: 2px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 /* index page */
-
 img {
-    border-radius: 50%;
-    width: 30%;
+  border-radius: 50%;
+  width: 30%;
 }
 
 .main-container {
-    display: flex;
-    justify-content: space-evenly;
+  display: flex;
+  justify-content: space-evenly;
 }
 
 .info {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .links, .button {
-    display: flex;
-    justify-content: space-evenly;
+  display: flex;
+  justify-content: space-evenly;
 }
 
 .contact-me {
@@ -267,7 +280,6 @@ img {
 }
 
 /* contact page */
-
 input {
   position: relative;
   display: block;
@@ -283,12 +295,12 @@ input {
   outline: none;
   color: black;
 }
+
 input:focus {
   border-bottom: 5px solid #ffa580;
 }
 
 /* about me page */
-
 .main-container {
   display: flex;
   justify-content: space-evenly;
@@ -312,7 +324,6 @@ input:focus {
   display: flex;
   flex-direction: column;
   align-items: start;
-
 }
 
 .links {
@@ -320,4 +331,3 @@ input:focus {
   justify-content: space-evenly;
   align-items: center;
 }
-
