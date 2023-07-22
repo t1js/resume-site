@@ -56,14 +56,16 @@ html {
   }
   
   /* Header and Navigation */
-  /* #header {
+#header {
     display: flex;
     justify-content: center;
-  } */
+    border: 10px solid transparent;
+  }
 
-  #header nav {
+#header nav {
     display: flex;
-    border: 60px solid transparent;
+    justify-content: center;
+    width: 100%;
   }
 
   #header nav ul {
@@ -73,10 +75,10 @@ html {
     list-style: none;
     border: solid 1px #ffffff;
     border-radius: 4px;
-    width: 100%;
+    width: max-content;
     justify-content: space-evenly;
   }
-  
+
   #header nav ul li {
     margin: 0;
     padding: 0;
