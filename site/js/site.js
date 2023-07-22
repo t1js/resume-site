@@ -1,3 +1,5 @@
-const setTheme = palette => document.documentElement.className = palette;
+function setTheme(palette) {
+    return document.documentElement.className = palette;
+}
 
 console.log("test")
