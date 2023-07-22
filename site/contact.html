@@ -1,43 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>Future CV site</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta rel="icon" type="image/png" href="images/favicon.png">
-        <meta charset="utf-8">
-        <base target="_blank">
-        <link rel="stylesheet" href="../site/css/style.css">
-        <link rel="stylesheet" href="../site/css/contact.css">
-    </head>
+<head>
+    <meta charset="utf-8">
+    <title>Future CV site</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <link rel="stylesheet" href="../site/css/style.css">
+</head>
+<body id="top">
 
-    <body id="top">
-        <header>
-            <nav>
-                <ul>
-                    <li><a href="aboutme.html">get to know me</a></li>
-                    <li><a href="resume.html">resume</a></li>
-                    <li><a href="contact.html">contact</a></li>
-                </ul>
-            </nav>
-        </header>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="aboutme.html">get to know me</a></li>
+                <li><a href="resume.html">resume</a></li>
+                <li><a href="contact.html">contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-        <div class="contact-me">
-            
-            <form required method="post" action="mailto:bakulevskaya.nb@gmail.com" enctype="application/x-www-form-urlencoded">
+    <div class="contact-me">
+        <form required method="post" action="mailto:bakulevskaya.nb@gmail.com" enctype="application/x-www-form-urlencoded">
+            <input placeholder="Name" required type="text">
+            <input name="email" placeholder="Email" type="email">
+            <input placeholder="What's up?" type="text">
+            <button type="submit">SEND MESSAGE</button>
+        </form>
+    </div>
 
-              <input placeholder="Name" required="" type="text" />
-              <input name="email" placeholder="Email" type="email" />
-              <input placeholder="What&#39;s up?" type="text" />
-              <button type="submit">SEND MESSAGE</button>
-            </form>
-          </div>
+    <footer>
+        <div class="palettes">
+            <img class="palette cool" title="Cool palette" src="../site/img/cool.png" alt="Cool palette button" onclick="setTheme('cool')">
+            <img class="palette warm" title="Warm palette" src="../site/img/warm.png" alt="Warm palette button" onclick="setTheme('warm')">
+        </div>
+    </footer>
 
+    <script type="text/javascript" src="js/site.js"></script>
 
- <footer>
-            <div class="palettes">
-                <img class="palette cool" title="Cool palette" src="../site/img/cool.png" alt="Cool palette button" onclick="setTheme('cool')"/>
-                <img class="palette warm" title="Warm palette" src="../site/img/warm.png" alt="Warm palette button" onclick="setTheme('warm')"/>
-                </div>
-        </footer>
 </body>
-</html><script type="text/javascript" src="js/site.js"></script>
+</html>
