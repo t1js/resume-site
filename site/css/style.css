@@ -13,55 +13,15 @@
     background-image: linear-gradient(to right, #daa84f 20%, #f2efe0 100%);
     --text-color: #34332e;
     }
-
-    @-ms-viewport {
-      width: device-width;
-    }
-  
-    @media screen and (max-width: 480px) {
-  
-      html, body {
-        min-width: 320px;
-      }
-  
-    }
   
     html {
       box-sizing: border-box;
+      font-size: 16pt;
     }
   
     *, *:before, *:after {
       box-sizing: inherit;
     }
-
-    html {
-      font-size: 16pt;
-    }
-  
-      @media screen and (max-width: 1680px) {
-  
-        html {
-          font-size: 12pt;
-        }
-  
-      }
-  
-      @media screen and (max-width: 736px) {
-  
-        html {
-          font-size: 11pt;
-        }
-  
-      }
-  
-      @media screen and (max-width: 360px) {
-  
-        html {
-          font-size: 10pt;
-        }
-  
-      }
-
     
     header, 
     footer {
