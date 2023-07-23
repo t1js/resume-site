@@ -21,20 +21,49 @@
     </header>
 
     <div class="contact-me">
-        <form required method="post" action="mailto:bakulevskaya.nb@gmail.com" enctype="application/x-www-form-urlencoded">
+        <form required method="post" action="" enctype="application/x-www-form-urlencoded">
             <input placeholder="Name" required type="text">
-            <input name="email" placeholder="Email" type="email">
+            <input placeholder="Email" type="email">
             <input placeholder="What's up?" type="text">
             <button type="submit">SEND MESSAGE</button>
         </form>
     </div>
+
+<!-- contact form  -->
+
+    <section id="get-in-touch">
+        <h2>Get In Touch</h2>
+        <p>Don't get in touch with me for now.</p>
+        <div class="row">
+            <div class="col-8 col-12-small">
+                <form method="post" action="mailto:">
+                    <div class="row gtr-uniform gtr-50">
+                        <div class="col-6 col-12-xsmall"><input type="text" name="name" id="name" placeholder="Name" /></div>
+                        <div class="col-6 col-12-xsmall"><input type="email" name="email" id="email" placeholder="Email" /></div>
+                        <div class="col-12"><textarea name="message" id="message" placeholder="Message" rows="4"></textarea></div>
+                    </div>
+                </form>
+                <ul class="actions">
+                    <li><input type="submit" value="Send Message" /></li>
+                </ul>
+            </div>
+        </div>
+    </section>
 
     <footer>
         <div class="palettes">
             <img class="palette cool" title="Cool palette" src="../site/img/cool.png" alt="Cool palette button" onclick="setTheme('cool')">
             <img class="palette warm" title="Warm palette" src="../site/img/warm.png" alt="Warm palette button" onclick="setTheme('warm')">
         </div>
-    </footer>
+
+        <div class="inner">
+            <ul class="icons">
+                <li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+                <li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li>
+                <li><a href="#" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+            </ul>
+        </div>
+     </footer>
 
     <script type="text/javascript" src="js/site.js"></script>
 
