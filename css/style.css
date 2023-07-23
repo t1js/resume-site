@@ -4,7 +4,12 @@
 /* color scheme for cool palette: #1dbbe1; #4f7fa7; #194560; #888c75; #8f355b; #bf8e91 */
 /* color scheme for warm palette: #f2efe0; #daa84f; #c88a37; #a56025; #34332e; #8e7d5f */
 
-:root, :root.cool {
+:root {
+  background-image: linear-gradient(to left, #BDBBBE 0%, #9D9EA3 100%), radial-gradient(88% 271%, rgba(255, 255, 255, 0.25) 0%, rgba(254, 254, 254, 0.25) 1%, rgba(0, 0, 0, 0.25) 100%), radial-gradient(50% 100%, rgba(255, 255, 255, 0.30) 0%, rgba(0, 0, 0, 0.30) 100%);
+  background-blend-mode: normal, lighten, soft-light;
+}
+
+   :root.cool {
     background-image: linear-gradient(to right, #a1c4fd 0%, #194560 100%);
     --text-color: white;
     }
