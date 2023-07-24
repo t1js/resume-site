@@ -249,6 +249,11 @@ p {
 
 .job_details .content {
   line-height: 26px;
+  font-size: 1vw;
+}
+
+.job_details .content p {
+  text-align: left;
 }
 
 /* index page */
