@@ -23,16 +23,12 @@
     <section id="get-in-touch">
         <h2>Get In Touch</h2>
         <p>Don't get in touch with me for now.</p>
-            <div class="form">
-            <form required method="post" action="mailto:" enctype="application/x-www-form-urlencoded">
-            <div class="form-fields">
-                <div class="form-field"><input type="text" name="name" id="name" placeholder="Name" /></div>
-                <div class="form-field"><input type="email" name="email" id="email" placeholder="Email" /></div>
-                <div class="form-field"><textarea name="message" id="message" placeholder="Message" rows="4"></textarea></div>
-            </div>
-                <input type="submit" value="Send Message" />
-            </form>
-            </div>
+        <form required method="post" action="mailto:" enctype="application/x-www-form-urlencoded">      
+            <input name="name" type="text" class="form-field" placeholder="Name" />   
+            <input name="email" type="text" class="form-field" placeholder="Email" />
+            <textarea name="text" class="form-field" placeholder="Message"></textarea>
+            <input type="submit" value="Send message"/>
+          </form>
     </section>
 
     <footer>
