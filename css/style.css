@@ -194,6 +194,7 @@ p {
 /* Page-specific styles */
 
 /* resume page */
+
 /* .navigation {
   display: flex;
   margin-left: 90%;
@@ -202,6 +203,7 @@ p {
 .main-container {
   display: flex;
   flex-direction: column;
+  margin: 1.5%;
 }
 
 .skills {
@@ -210,6 +212,15 @@ p {
 
 .soft-skills, .hard-skills {
   flex: 50%;
+}
+
+.tag {
+   display: inline-flex;
+    width: fit-content;
+    padding: 0.375rem 0.625rem;
+    background: #e8e8e8c0;
+    border-radius: 0.375rem;
+    margin: 4px;
 }
 
 .experience {
@@ -401,14 +412,14 @@ table.alt tfoot {
 }
 
 .button:hover {
-  border-color: #49bf9d;
-  color: #49bf9d !important;
+  border-color: #171717;
+  /* color: #49bf9d !important; */
 }
 
 .button:active {
   background-color: rgba(73, 191, 157, 0.1);
-  border-color: #49bf9d;
-  color: #49bf9d !important;
+  border-color: #171717;
+  /* color: #49bf9d !important; */
 }
 
 .button.icon {
@@ -430,18 +441,18 @@ table.alt tfoot {
 
 .button.primary {
   background-color: #49bf9d;
-  border-color: #49bf9d;
+  border-color: #171717;
   color: #ffffff !important;
 }
 
 .button.primary:hover {
   background-color: #5cc6a7;
-  border-color: #5cc6a7;
+  border-color: #171717;
 }
 
 .button.primary:active {
   background-color: #3eb08f;
-  border-color: #3eb08f;
+  border-color: #171717;
 }
 
 .button.disabled,
