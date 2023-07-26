@@ -222,11 +222,6 @@ https://codepen.io/denic/pen/GRoOxbM
   }
 } */
 
-img {
-  border-radius: 50%;
-  width: 70%;
-}
-
 .main-container {
   display: flex;
   justify-content: space-evenly;
