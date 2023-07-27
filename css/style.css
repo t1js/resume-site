@@ -191,6 +191,10 @@ p {
   font: inherit;
 }
 
+.icons-source {
+  font-size: 0.6rem;
+}
+
 /* Page-specific styles */
 
 /* index page */
@@ -472,7 +476,6 @@ table.alt tfoot {
   color: #787878 !important;
   cursor: pointer;
   display: inline-block;
-  font-weight: 400;
   height: 2.75em;
   line-height: 2.75em;
   min-width: 10em;
