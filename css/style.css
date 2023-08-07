@@ -17,9 +17,14 @@ html {
       box-sizing: inherit;
   }
 
-  body, .tag {
+  body {
     font: normal 18px/1.5 "Source Sans Pro", 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     text-align: center;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
   }
 
   a {
@@ -92,6 +97,7 @@ html {
     cursor: pointer;
     padding: 10px;
     z-index: 9999; /* Ensure it's on top of other elements */
+    margin-bottom: 3px;
 }
 
 #hamburger img {
@@ -99,15 +105,16 @@ html {
     height: auto;
 }
 
-/* Hide the menu by default */
-#menu {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
 #menu.show {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 15%; 
+  right: 0;
+  background-color: #f9f9f9;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
 }
 
 body.is-preload #header {
@@ -259,6 +266,7 @@ p {
     background: #e8e8e8c0;
     border-radius: 0.375rem;
     margin: 4px;
+    font: inherit;
 }
 
 .tag:hover {
@@ -414,15 +422,13 @@ textarea {
 /* Media query for mobile menu */
 @media (max-width: 768px) {
   #menu {
-      display: none;
-      flex-direction: column;
-      align-items: center;
-      background-color: rgb(192, 192, 192);
-      position: absolute;
-      top: 60px;
-      left: 0;
-      width: 100%;
-  }
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    left: 0;
+    width: 100%;
+}
 
   #menu li {
       padding: 15px 0;
@@ -430,6 +436,8 @@ textarea {
 
   .menu-toggle {
       display: block;
+      margin-right: 2%;
+      margin-bottom: 2%;
   }
 
   #hamburger img {
