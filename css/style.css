@@ -417,7 +417,7 @@ textarea {
       display: none;
       flex-direction: column;
       align-items: center;
-      background-color: rgba(86, 86, 86, 0.9);
+      background-color: rgb(192, 192, 192);
       position: absolute;
       top: 60px;
       left: 0;
