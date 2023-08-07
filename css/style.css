@@ -70,7 +70,7 @@ html {
     width: 100%;
   }
 
-  #header nav ul {
+  .menu {
     display: flex;
     margin: 0;
     padding: 0;
@@ -81,12 +81,12 @@ html {
     justify-content: space-evenly;
   }
 
-  #header nav ul li {
+  .menu li {
     margin: 0;
     padding: 0;
   }
   
-  #header nav ul li a {
+  .menu li a {
     display: block;
     height: 2.75rem;
     line-height: 2.75rem;
@@ -98,11 +98,11 @@ html {
     text-align: center;
   }
   
-  #header nav ul li a:hover {
+  .menu li a:hover {
     background-color: rgba(255, 255, 255, 0.075);
   }
   
-  #header nav ul li a:active {
+.menu li a:active {
     background-color: rgba(255, 255, 255, 0.175);
   }
   
