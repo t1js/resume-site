@@ -1,34 +1,10 @@
 @import url(fontawesome-all.min.css);
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300italic,600italic,300,600");
 
-/* color scheme for cool palette: #1dbbe1; #4f7fa7; #194560; #888c75; #8f355b; #bf8e91 */
-/* color scheme for warm palette: #f2efe0; #daa84f; #c88a37; #a56025; #34332e; #8e7d5f */
-
 :root {
   background-image: linear-gradient(to left, #BDBBBE 0%, #9D9EA3 100%), radial-gradient(88% 271%, rgba(255, 255, 255, 0.25) 0%, rgba(254, 254, 254, 0.25) 1%, rgba(0, 0, 0, 0.25) 100%), radial-gradient(50% 100%, rgba(255, 255, 255, 0.30) 0%, rgba(0, 0, 0, 0.30) 100%);
   background-blend-mode: normal, lighten, soft-light;
 }
-
-   /* :root.cool {
-    background-image: linear-gradient(to right, #a1c4fd 0%, #194560 100%);
-    --text-color: white;
-    }
-    :root.warm {
-    background-image: linear-gradient(to right, #daa84f 20%, #f2efe0 100%);
-    --text-color: #34332e;
-    } */
-
-.palette {
-      height: 60px;
-      width: auto;
-      object-fit: cover;
-      border-radius: 0%;
-  }
-  
-.palette:hover {
-      border: 2px solid #34332e;
-      border-radius: 50%;
-  }
 
 /* Global styles */
   
@@ -70,7 +46,7 @@ html {
     width: 100%;
   }
 
-  .menu {
+  #menu {
     display: flex;
     margin: 0;
     padding: 0;
@@ -81,12 +57,12 @@ html {
     justify-content: space-evenly;
   }
 
-  .menu li {
+  #menu li {
     margin: 0;
     padding: 0;
   }
   
-  .menu li a {
+  #menu li a {
     display: block;
     height: 2.75rem;
     line-height: 2.75rem;
@@ -98,11 +74,11 @@ html {
     text-align: center;
   }
   
-  .menu li a:hover {
+  #menu li a:hover {
     background-color: rgba(255, 255, 255, 0.075);
   }
   
-.menu li a:active {
+#menu li a:active {
     background-color: rgba(255, 255, 255, 0.175);
   }
   
@@ -111,23 +87,27 @@ html {
   }
 
   /* Mobile menu styles */
-.menu-toggle {
-  display: none;
-  cursor: pointer;
-  padding: 10px;
+  .menu-toggle {
+    display: none;
+    cursor: pointer;
+    padding: 10px;
+    z-index: 9999; /* Ensure it's on top of other elements */
 }
 
-.hamburger {
-  width: 25px;
-  height: 3px;
-  background-color: #333;
-  margin: 6px 0;
+#hamburger img {
+    width: 100%;
+    height: auto;
 }
 
 /* Hide the menu by default */
-.menu {
+#menu {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+}
+
+#menu.show {
+  display: block;
 }
 
 body.is-preload #header {
@@ -217,33 +197,6 @@ p {
 /* Page-specific styles */
 
 /* index page */
-
-/*
-
-https://codepen.io/denic/pen/GRoOxbM
-
-.typing-hello {
-  width: 36ch;
-  animation: typing 2s steps(22), blink .5s step-end infinite alternate;
-  white-space: nowrap;
-  overflow: hidden;
-  border-right: 3px solid;
-  font-family: monospace;
-  font-size: 2em;
-  margin: 3%;
-}
-
-@keyframes typing {
-  from {
-    width: 0
-  }
-}
-    
-@keyframes blink {
-  50% {
-    border-color: transparent
-  }
-} */
 
 .main-container {
   display: flex;
@@ -458,28 +411,29 @@ textarea {
 
 /* Responsive Styles */
 
-@media screen and (max-width: 736px) {
-    .menu {
-        display: none;
-    }
+/* Media query for mobile menu */
+@media (max-width: 768px) {
+  #menu {
+      display: none;
+      flex-direction: column;
+      align-items: center;
+      background-color: rgba(86, 86, 86, 0.9);
+      position: absolute;
+      top: 60px;
+      left: 0;
+      width: 100%;
+  }
 
-    .menu-toggle {
-        display: block;
-    }
+  #menu li {
+      padding: 15px 0;
+  }
 
-    /* Show the menu when the hamburger is clicked */
-    .show-menu .menu {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        background-color: #f8f8f8;
-        position: absolute;
-        top: 60px;
-        left: 0;
-        width: 100%;
-    }
+  .menu-toggle {
+      display: block;
+  }
 
-    .show-menu .menu li {
-        padding: 15px 0;
-    }
+  #hamburger img {
+    width: 10vw;
+    height: 10vw;
+  }
 }
