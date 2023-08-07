@@ -110,6 +110,26 @@ html {
     list-style: none;
   }
 
+  /* Mobile menu styles */
+.menu-toggle {
+  display: none;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.hamburger {
+  width: 25px;
+  height: 3px;
+  background-color: #333;
+  margin: 6px 0;
+}
+
+/* Hide the menu by default */
+.menu {
+  display: flex;
+  justify-content: space-between;
+}
+
 body.is-preload #header {
   -moz-filter: none;
   -webkit-filter: none;
@@ -437,22 +457,29 @@ textarea {
 }
 
 /* Responsive Styles */
-@media screen and (max-width: 1680px) {
-  /* Add your styles for large screens here */
-}
-
-@media screen and (max-width: 1280px) {
-  /* Add your styles for medium-sized screens here */
-}
-
-@media screen and (max-width: 980px) {
-  /* Add your styles for small screens here */
-}
 
 @media screen and (max-width: 736px) {
-  /* Add your styles for extra-small screens here */
-}
+    .menu {
+        display: none;
+    }
 
-@media screen and (max-width: 480px) {
-  /* Add your styles for extra-extra-small screens here */
+    .menu-toggle {
+        display: block;
+    }
+
+    /* Show the menu when the hamburger is clicked */
+    .show-menu .menu {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #f8f8f8;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+    }
+
+    .show-menu .menu li {
+        padding: 15px 0;
+    }
 }
