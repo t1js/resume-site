@@ -27,6 +27,10 @@ html {
     min-height: 100vh;
   }
 
+  p > a {
+    text-decoration: underline;
+  }
+
   a {
     text-decoration: none;
     color: inherit;
@@ -36,6 +40,10 @@ html {
   
   a:hover {
     opacity: 1;
+  }
+
+  footer {
+    margin-top: 3%;
   }
   
   /* Header and Navigation */
@@ -47,7 +55,7 @@ html {
 
 #header nav {
     display: flex;
-    justify-content: center;
+    justify-content: end;
     width: 100%;
   }
 
@@ -56,8 +64,6 @@ html {
     margin: 0;
     padding: 0;
     list-style: none;
-    border: solid 1px #ffffff;
-    border-radius: 4px;
     width: max-content;
     justify-content: space-evenly;
   }
@@ -203,28 +209,7 @@ p {
 
 /* Page-specific styles */
 
-/* index page */
-
-.main-container {
-  display: flex;
-  justify-content: space-evenly;
-}
-
-.info {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  margin: 10px;
-}
-
-.links {
-  display: flex;
-  justify-content: space-evenly;
-}
-
-/* about me page */
+/* home page */
 
 .main-container {
   display: flex;
@@ -249,14 +234,24 @@ p {
   display: flex;
   flex-direction: column;
   align-items: start;
+  width: 80%;
 }
 
-.skills {
+/* resume page */
+
+.skills-container {
   display: flex;
+  justify-content: center; /* Center-align the skills */
+  margin-top: 20px; /* Adjust margin as needed */
 }
 
-.soft-skills, .hard-skills {
-  flex: 50%;
+.skill-category {
+  margin: 0 20px; /* Adjust margin between skill categories */
+}
+
+.languages {
+  text-align: center; /* Center-align the languages */
+  margin-top: 20px; /* Adjust margin as needed */
 }
 
 .tag {
@@ -267,6 +262,7 @@ p {
     border-radius: 0.375rem;
     margin: 4px;
     font: inherit;
+    font-size: smaller;
 }
 
 .tag:hover {
@@ -277,63 +273,6 @@ p {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-}
-
-/* resume page */
-
-/* .navigation {
-  display: flex;
-  margin-left: 90%;
-} */
-
-.main-container {
-  display: flex;
-  flex-direction: column;
-  margin: 1.5%;
-}
-
-.experience {
-  width: 95%;
-  max-width: 1220px;
-  margin: 2% auto;
-}
-
-.job {
-  display: grid;
-  grid-template-columns: 1fr 3fr;
-  position: relative;
-}
-
-.job_dates {
-  /* font-size: 1.5vw; */
-  padding: 10px 0;
-  position: sticky;
-  top: 0;
-  text-align: center;
-  height: calc(10vw + 20px);
-  transition: all 0.2s ease-in;
-}
-
-.job_details {
-  border-top: 2px solid #fff;
-  display: grid;
-  grid-template-columns: 1fr 4fr;
-  grid-gap: 10px;
-  padding: 15px 0;
-}
-
-/* 
-.job_details .title {
-  font-size: 1.5vw;
-} */
-
-.job_details .content {
-  line-height: 26px;
-  font-size: 1vw;
-}
-
-.job_details .content p {
-  text-align: left;
 }
 
 /* contact page */
