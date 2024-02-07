@@ -241,17 +241,17 @@ p {
 
 .skills-container {
   display: flex;
-  justify-content: center; /* Center-align the skills */
-  margin-top: 20px; /* Adjust margin as needed */
+  justify-content: center; 
+  margin-top: 20px;
 }
 
 .skill-category {
-  margin: 0 20px; /* Adjust margin between skill categories */
+  margin: 0 20px;
 }
 
 .languages {
-  text-align: center; /* Center-align the languages */
-  margin-top: 20px; /* Adjust margin as needed */
+  text-align: center;
+  margin-top: 20px;
 }
 
 .tag {
