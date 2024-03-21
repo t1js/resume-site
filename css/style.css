@@ -165,6 +165,7 @@ h4 {
 }
 h5 {
     font-size: 0.7rem;
+    align-self: flex-start;
 }
 h6 {
     font-size: 0.6rem;
@@ -172,6 +173,10 @@ h6 {
 
 p {
   font: inherit;
+}
+
+li {
+  text-align: start;
 }
 
 .icons-source {
@@ -192,7 +197,7 @@ p {
 
 .short-info {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   flex-direction: row;
 }
 
@@ -208,8 +213,16 @@ p {
   margin-top: 3%;
   display: flex;
   flex-direction: column;
-  align-items: center;
   width: 70%;
+  align-content: start;
+}
+
+.details > h5 {
+  color: #111111;
+}
+
+.details > p {
+  text-align: start;
 }
 
 /* resume page */
@@ -248,6 +261,12 @@ p {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+}
+
+.badges {
+  display: flex;
+  align-items: center;
+  margin: 2% 5% 3% 2%;
 }
 
 /* contact page */
