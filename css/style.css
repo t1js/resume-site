@@ -1,76 +1,120 @@
 @import url(fontawesome-all.min.css);
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300italic,600italic,300,600");
 
-:root {
-  background-image: linear-gradient(to left, #BDBBBE 0%, #9D9EA3 100%), radial-gradient(88% 271%, rgba(255, 255, 255, 0.25) 0%, rgba(254, 254, 254, 0.25) 1%, rgba(0, 0, 0, 0.25) 100%), radial-gradient(50% 100%, rgba(255, 255, 255, 0.30) 0%, rgba(0, 0, 0, 0.30) 100%);
-  background-blend-mode: normal, lighten, soft-light;
-}
-
-/* Global styles */
+/*global*/
   
 html {
-      box-sizing: border-box;
-      font-size: 16pt;
-  }
+  box-sizing: border-box;
+  font-size: 16pt;
+}
 
-  *, *:before, *:after {
-      box-sizing: inherit;
-  }
+*, *:before, *:after {
+  box-sizing: inherit;
+}
 
-  body {
-    font: normal 18px/1.5 "Source Sans Pro", 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    text-align: center;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-  }
+body {
+  font: normal 18px/1.5 "Source Sans Pro", 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: #111111;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
 
-  p > a {
-    text-decoration: underline;
-  }
+::selection {
+  background: #ffc8ff;
+}
 
-  a {
-    text-decoration: none;
-    color: inherit;
-    cursor: pointer;
-    opacity: 0.9;
-  }
+a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+  opacity: 0.9;
+}
   
-  a:hover {
-    opacity: 1;
-  }
+a:hover {
+  opacity: 1;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font: inherit;
+  text-transform: uppercase;
+}
+
+h1 {
+  font-size: 2.25rem;
+  line-height: 1.3;
+  letter-spacing: 0.5rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+  line-height: 1.4;
+  letter-spacing: 0.5rem;
+}
+
+h3, h4, h5, h6 {
+  line-height: 1.5;
+  letter-spacing: 0.2rem;
+}
+
+h3 {
+  font-size: 1rem;
+}
+h4 {
+  font-size: 0.8rem;
+}
+h5 {
+  font-size: 0.7rem;
+}
+h6, .icons-source {
+  font-size: 0.6rem;
+}
+
+p {
+  font: inherit;
+}
 
   footer {
-    margin-top: 3%;
-  }
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 3%;
+}
   
-  /* Header and Navigation */
+  /*header and menu*/
+  
 #header {
-    display: flex;
-    justify-content: center;
-    border: 10px solid transparent;
-  }
+  display: flex;
+  flex-direction: row;
+  border: 10px solid transparent;
+}
 
 #header nav {
-    display: flex;
-    justify-content: end;
-    width: 100%;
-  }
+  display: flex;
+  justify-content: end;
+  width: 100%;
+}
 
-  #menu {
-    display: flex;
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    width: max-content;
-    justify-content: space-evenly;
-  }
+#header h6 {
+  justify-content: start;
+  width: 100%;
+  margin-top: 1%;
+}
+
+#menu {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  width: max-content;
+  justify-content: space-evenly;
+}
 
   #menu li {
     margin: 0;
     padding: 0;
+    list-style: none;
   }
   
   #menu li a {
@@ -86,151 +130,50 @@ html {
   }
   
   #menu li a:hover {
-    background-color: rgba(255, 255, 255, 0.075);
+    background-color: rgba(28, 26, 26, 0.075);
   }
-  
-#menu li a:active {
-    background-color: rgba(255, 255, 255, 0.175);
-  }
-  
-  ul, nav {
-    list-style: none;
-  }
-
-body.is-preload #header {
-  -moz-filter: none;
-  -webkit-filter: none;
-  -ms-filter: none;
-  filter: none;
-}
-
-  body.is-preload #header > * {
-    opacity: 1;
-  }
-
-  body.is-preload #header .content .inner {
-    max-height: none;
-    padding: 3rem 2rem;
-    opacity: 1;
-  }
-  
-  ::selection {
-    background: #ffc8ff;
-  }
-  
-  input:-webkit-autofill,
-  input:-webkit-autofill:hover,
-  input:-webkit-autofill:focus {
-    border-bottom: 5px solid #95a4ff;
-    -webkit-text-fill-color: #2A293E;
-    -webkit-box-shadow: 0 0 0px 1000px #f8f4e5 inset;
-    transition: background-color 5000s ease-in-out 0s;
-  }
-
-  h1, h2, h3, h4, h5, h6 {
-    color: #ffffff;
-    font-weight: 600;
-    line-height: 1.5;
-    margin: 0 0 1rem 0;
-    text-transform: uppercase;
-    letter-spacing: 0.2rem;
-    font: inherit;
-}
-
-    h1.major, h2.major, h3.major, h4.major, h5.major, h6.major {
-        border-bottom: solid 1px #ffffff;
-        width: -moz-max-content;
-        width: -webkit-max-content;
-        width: -ms-max-content;
-        width: max-content;
-        padding-bottom: 0.5rem;
-        margin: 0 0 2rem 0;
-    }
-
-h1 {
-    font-size: 2.25rem;
-    line-height: 1.3;
-    letter-spacing: 0.5rem;
-}
-h2 {
-    font-size: 1.5rem;
-    line-height: 1.4;
-    letter-spacing: 0.5rem;
-}
-h3 {
-    font-size: 1rem;
-}
-h4 {
-    font-size: 0.8rem;
-}
-h5 {
-    font-size: 0.7rem;
-    align-self: flex-start;
-}
-h6 {
-    font-size: 0.6rem;
-}
-
-p {
-  font: inherit;
-}
-
-li {
-  text-align: start;
-}
-
-.icons-source {
-  font-size: 0.6rem;
-}
-
-/* Page-specific styles */
 
 /* home page */
 
-.me {
-  margin-top: 3%;
+.me, .info {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-evenly;
+  margin-top: 2%;
 }
 
 .short-info {
   display: flex;
   justify-content: space-evenly;
-  flex-direction: row;
 }
 
 .info {
-  margin-top: 3%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   width: 50%;
 }
 
 .details {
-  margin-top: 3%;
   display: flex;
   flex-direction: column;
+  margin-top: 2%;
   width: 70%;
-  align-content: start;
-}
-
-.details > h5 {
-  color: #111111;
-}
-
-.details > p {
-  text-align: start;
 }
 
 /* resume page */
 
+.resume {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.jobs {
+  display: flex;
+  flex-direction: column;
+}
+
 .skills-container {
   display: flex;
-  justify-content: center; 
-  margin-top: 20px;
+  margin: 20px 20px;
 }
 
 .skill-category {
@@ -261,12 +204,6 @@ li {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-}
-
-.badges {
-  display: flex;
-  align-items: center;
-  margin: 2% 5% 3% 2%;
 }
 
 /* contact page */
@@ -375,8 +312,8 @@ textarea {
   }
 
   #hamburger img {
-    width: 10vw;
-    height: 10vw;
+    width: 30px;
+    height: 30px;
   }
 
   .short-info {
