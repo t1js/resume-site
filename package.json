@@ -1,0 +1,23 @@
+{
+  "name": "resume-site",
+  "version": "1.0.0",
+  "description": "This website is basically my interactive resume project which has two distinct purposes:\r 1. to help me overcome my fear of front-end development & kick me out of the \"I am a QA engineer, not a developer\" comfort zone;\r 2. to display my skills and to make me stand out for potential employers.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/t1js/resume-site.git"
+  },
+  "author": "Anastasiia Bakulevska",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/t1js/resume-site/issues"
+  },
+  "homepage": "https://github.com/t1js/resume-site#readme",
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  }
+}
