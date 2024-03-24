@@ -130,7 +130,7 @@ p {
   }
   
   #menu li a:hover {
-    background-color: rgba(28, 26, 26, 0.075);
+    background-color: #1c1a1a13;
   }
 
 /* home page */
@@ -276,7 +276,7 @@ textarea {
 }
 
 .button:active {
-  background-color: rgba(73, 191, 157, 0.1);
+  background-color: #49bf9d1a;
   border-color: #787878;
   /* color: #49bf9d !important; */
 }
