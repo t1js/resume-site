@@ -297,18 +297,8 @@ textarea {
 /* Media query for mobile */
 @media (max-width: 768px) {
 
-  .photo {
+  #menu {
     display: none;
-  }
-
-  .info {
-    width: 100%;
-  }
-
-  .short-info, .details {
-    display: flex;
-    flex-direction: column;
-    width: 90%;
   }
 
   .menu-toggle {
@@ -320,19 +310,39 @@ textarea {
 }
 
 #hamburger {
-    width: 100%;
-    height: auto;
+  display: flex;
+    width: 10vw;
+    height: 10vw;
 }
 
 #menu.show {
   display: flex;
   flex-direction: column;
   position: absolute;
-  top: 15%; 
-  right: 0;
+  top: 15vw; 
+  right: 2vw;
   background-color: #f9f9f9;
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 5px;
+}
+
+.photo {
+  display: none;
+}
+
+.info {
+  width: 100%;
+}
+
+.short-info, .details {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+}
+
+.resume {
+  width: 90%;
+  margin-left: 5%;
 }
 }
